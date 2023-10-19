@@ -9,19 +9,19 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
 
       - name: Checkout hugo-cloak-email repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: martignoni/hugo-cloak-email
           path: themes/hugo-cloak-email
 
       - name: Checkout theme repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: Track3/hermit
           path: themes/hermit
